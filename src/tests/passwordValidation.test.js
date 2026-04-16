@@ -52,3 +52,11 @@ describe("VALIDATION_VARIANCE", () => {
     expect(isValidPassword("aaaaBBBB11")).toBe(false);
   });
 });
+
+
+//CONDITIONS
+//  length -> 10 
+// numbers + characters
+//no numbers alone and no characters alone
+//no special characters
+//character must be both lower and uppercase characters

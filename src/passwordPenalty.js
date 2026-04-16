@@ -13,4 +13,16 @@ export default function penaltyPoints(password = "") {
   // * * * INSERT YOUR CODE HERE * * * * * * * * * * * * * *
   // * * * * * * * * * * * * * * * * * * * * * * * * * * * *
   //
+
+  const regex = /(.)\1+/g
+  const matches = password.match(regex)
+  let count = 0
+  
+  for(const char of  matches){
+   if(char.length >= 2){
+    char.length ===2 ? count++ : count+=2;
+   }
+  }
+
+ return count;
 }

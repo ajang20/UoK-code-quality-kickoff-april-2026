@@ -24,3 +24,4 @@ export default function isValidPassword(password = "") {
   if (setOfPassword.size < 4) return false;
   return true;
 }
+
